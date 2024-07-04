@@ -42,7 +42,7 @@ img{
     font-weight: 900;
 }
 
-#add{
+.add{
     background-color: royalblue;
     color: aliceblue;
     padding: 10px;
@@ -53,8 +53,8 @@ img{
     border: none;
 }
 
-#added{
-    background-color: white;
+.added{
+    background-color: white !important;
     color: #9a9999;
     padding: 10px;
     font-size: large;
