@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input Tags</title>
+</head>
+<body>
+    <h1>Application</h1>
+    <form action="post">
+
+        <div>
+            <label>Enter your Username</label>
+            <input type="text" name="username" placeholder="Enter your username">
+        </div>
+
+        <div>
+            <label>Select your gender</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <!-- the "id" in the above line and the "for" in the next line should be same -->
+            <label for="Female">Female</label> 
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+        
+        <div>
+            <!-- <label>Above details filled</label> -->
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="yes">
+            <label for="checkbox1">Above details filled</label>
+        </div>
+
+        <div>
+            <label for="textarea1">comment here...</label>
+            <textarea name="textarea1" rows="5" cols="40"></textarea>
+            <!-- <label for="textarea1">comment here...</label> -->
+        </div>
+
+        <div>
+            <select name="selection1">
+                <option value="first">Manav</option>
+                <option value="second">Gautam</option>
+                <option value="third">Garvit</option>
+                <option>samarth</option>
+            </select>
+        </div>
+        
+    </form>
+</body>
+</html>

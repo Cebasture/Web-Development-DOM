@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            background-color: red;
+        } */
+
+        /* below is eg of class selector */
+        .red{
+            background-color: red;
+        }
+
+        /* below is the eg of id selector...always starts with a hash */
+        #yellow{
+            background-color: blueviolet;
+        }
+
+        /* child selector */
+        div > p{
+            background-color: chartreuse;
+            color: tomato;
+        }
+
+        /* descendant selector */
+        div p{
+            background-color: chartreuse;
+            color: tomato;
+        }
+
+        /* pseudo selectors */
+        a:visited{
+            color: chocolate;
+        }
+
+        a:hover{
+            color: aqua;
+        }
+
+        a:active{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="red" id="yellow2">
+        <article> 
+            <p>i am a div. This is nothing but a division.</p>
+        </article>
+    </div>
+
+    <div class="red" id="yellow">
+        i am also a div. but my colour is not red.
+    </div>
+
+    <div id="one">
+        <a href="https://www.google.com">Go to Google</a>
+    </div>
+</body>
+</html>

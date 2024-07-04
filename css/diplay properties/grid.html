@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid tutorial in CSS</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+            display: grid;
+            background-color: blueviolet;
+            height: 700px;
+            /* width: 900px; */
+            /* grid-template-rows: 190px 190px 190px; */
+            /* grid-template-columns: 190px 190px 190px; */
+            /* grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); */
+            /* below code tells us the number of rows and columns present in the grid */
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+            /* justify-items: center; */
+            place-items: center;
+
+        }
+
+        .items{
+            /* display: grid; */
+            background-color: aquamarine;
+            width: 150px;
+            height: 150px;
+        }
+
+        .item1{
+            background-color: black;
+            color: aliceblue;
+            height: 50px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            /* following lines tells us that col 1 will span 2 cols */
+            /* grid-column: 1 / span 2; */
+        }
+
+        .item2{
+            background-color: black;
+            color: aliceblue;
+            height: 50px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">header</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items item2">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading and specificity</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+
+        .one{
+            color: blue;
+        }
+
+        h1.one{
+            color: chocolate;
+        }
+
+        .three{
+            color: blueviolet;
+        }
+
+        .two{
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="one two three" id="h1">Specificity</h1>
+    </header>
+</body>
+</html>

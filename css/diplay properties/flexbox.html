@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial in CSS</title>
+    <style>
+
+        .fcontainer{
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            justify-content: center;
+            /* width: 1000px; */
+            height: 500px;
+            align-items: center;
+            flex-wrap: wrap;
+            /* when using flex wrap we use another property called align-content which helps to us to space out lines when the items are getting wrapped in the next line */
+            align-content: center;
+        }
+
+        .fitem{
+            border: 2px solid black;
+            display: flex;
+            margin: 20px;
+            /* width is only applicable if the display is set to inline-block, flex */
+            width: 100px; 
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fitem1{
+            height: 200px;
+            display: flex;
+            align-self: baseline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="fcontainer">
+        <div class="fitem">i am box1</div>
+        <div class="fitem">i am box2</div>
+        <div class="fitem">i am box3</div>
+        <div class="fitem fitem1">i am box4</div>
+        <div class="fitem">i am box5</div>
+        <div class="fitem">i am box6</div>
+    </div>
+</body>
+</html>

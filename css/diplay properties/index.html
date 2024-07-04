@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display properties</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            width: 190px;
+            padding: 45px;
+            margin: 34px;
+            /* centering the content inside the box */
+            display: inline-flex;
+            justify-content: center;
+        }
+        .box2{
+            border: 2px solid black;
+            display: inline-block;
+            padding: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <div class="box2">
+        i am a div box
+    </div>
+    <!-- span is an inline element whereas div is not -->
+    <!-- <span class="box2">
+        i am aother box
+    </span>
+    <span>
+        i am also a box
+    </span> -->
+</body>
+</html>

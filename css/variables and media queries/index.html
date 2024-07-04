@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Global and Local variables and exploring media queries.</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* declaring and initializaing Global variables in CSS */
+        :root{
+            --color: blue;
+            --seccolor: rgb(60, 180, 255);
+            --defpad: 30px;
+            --demargin: 10px;
+        }
+
+        .box1{
+            background-color: var(--color);
+            margin: var(--demargin);
+            /* padding: var(--defpad); */
+        }
+        
+        .main{
+            border: 2px solid black;
+            padding: var(--defpad);
+            margin: var(--demargin);
+            background-color: var(--seccolor);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            padding: var(--defpad);
+            list-style: none;
+            /* margin: var(--demargin); */
+            border: 5px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color: rgb(245, 180, 0);
+            background-color: var(--color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia reprehenderit, sequi quam minima molestias beatae consequatur eos saepe amet facilis. Nostrum ab commodi neque recusandae quaerat necessitatibus quos animi quo aperiam, doloremque ducimus provident quis minus reprehenderit debitis. Maiores, asperiores beatae. Temporibus alias laboriosam dignissimos reiciendis molestias autem, saepe ratione omnis deleniti doloribus labore recusandae fugit expedita, culpa sapiente cupiditate modi provident sunt obcaecati dolores ipsam. Numquam a enim ullam. Inventore a ratione deleniti aut in non recusandae et consequatur? Sapiente, optio laboriosam? Earum pariatur sint, quae architecto minus accusantium ratione commodi quia ipsam molestiae, eius, nam esse ducimus?
+    </div>
+</body>
+</html>
